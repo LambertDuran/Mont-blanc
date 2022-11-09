@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+.App{
+  background-color: black;
+  position: relative;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gold{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body_container{
+  position: relative;
+  display: flex;
+  align-items:flex-start;
+  vertical-align: bottom;
+  border: 10px green solid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.asian_typo{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.moto{
+  width: 80%;
+  z-index: 2;
+}
+
+.wheel{
+  width: 15%;
+  height: auto;
+  padding-left: 3em;
+  background-color: black;
+  border: 5px blue solid
+}
+
+.wheel_container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom_container{
+  
+  width: 40%;
+  border: 5px pink solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
+.brake{
+  display: block;
+  width: auto;
+}
+
+.moto_container{
+  display: inline-block;
+  position: relative;
+  width: 55%;
+  height: auto;
+  background-color: black;
+  border: 5px red solid;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 15px;
+  color:white;
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  border-radius: 50%;
+  z-index: 3;
+  animation-name: rotation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.char {
+  --char-total: 20;
+  --i: calc(100% / (var(--char-total) + 1));
+  position: absolute;
+  offset-path: path("M1,0 A1,1 0 1,1 1,2 A1,1 0 1,1 1,0");
+  offset-distance: calc(var(--i) * var(--char-index));
+  padding-bottom: 6em;
+}
+
+@keyframes rotation{
+  100%{
     transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width: 900px){
+
+  .moto_container{
+    width: 100%;
+  }
+
+  .wheel{
+    align-self: flex-start;
+    padding-top: 2em;
+  }
+
+  .gold{
+      display: none;
   }
 }
