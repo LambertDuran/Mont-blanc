@@ -45,6 +45,19 @@ const printMotoAnimation = () => {
   return moto;
 };
 
+const NumericInfo = ({ info, value, subvalue, category }) => {
+  return (
+    <div className="numeric_info_grid">
+      <p className="category">{category}</p>
+      <div>
+        <p>{info}</p>
+        <p>{value}</p>
+        <p>{subvalue}</p>
+      </div>
+    </div>
+  );
+};
+
 function App() {
   return (
     <div className="App">
@@ -63,6 +76,32 @@ function App() {
           <img src={info} alt="info" className="info" />
         </div>
         <img src={brake} alt="brake" className="brake" />
+      </div>
+      <div className="numeric_container">
+        <NumericInfo
+          info="6-speed constant-mesh"
+          value="169 mph"
+          subvalue="272 km/h"
+          category="top speed"
+        />
+        <NumericInfo
+          info="121 kw"
+          value="162 hp"
+          subvalue="9.250 rpm"
+          category="power"
+        />
+        <NumericInfo
+          info="8.800RPM"
+          value="130.5 N.M"
+          subvalue="96.3 LBF.FT"
+          category="torque"
+        />
+        <NumericInfo
+          info="4.5 US GAL"
+          value="17 L"
+          subvalue="3.7 IMP GAL"
+          category="capacity"
+        />
       </div>
     </div>
   );
