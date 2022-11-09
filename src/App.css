@@ -16,15 +16,15 @@
   display: flex;
   align-items:flex-start;
   vertical-align: bottom;
-  border: 1px green solid;
 }
 
 .asian_typo{
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -10%;
   width: 70%;
   height: auto;
+  z-index: 3;
 }
 
 .numeric_container{
@@ -33,9 +33,9 @@
   top: 260px;
   display: block;
   padding: 2em;
+  padding-right: 6em;
   color: white;
   text-transform: uppercase;
-  flex-wrap: nowrap;
 }
 
 .numeric_container p{
@@ -76,7 +76,6 @@
   height: auto;
   padding-left: 3em;
   background-color: black;
-  border: 1px blue solid
 }
 
 .info{
@@ -87,7 +86,6 @@
 .brake{
   justify-self: end;
   width: 15%;
-  border: 1px blue solid
 }
 
 .moto_container{
@@ -95,8 +93,7 @@
   position: relative;
   width: 55%;
   height: auto;
-  background-color: black;
-  border: 1px red solid;
+  align-self: flex-end;
 }
 
 h1{
