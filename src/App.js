@@ -5,6 +5,7 @@ import gold from "./img/Gold.png";
 import asian_typo from "./img/VECTOR.svg";
 import wheel from "./img/wheel.png";
 import brake from "./img/brake.png";
+import info from "./img/info.png";
 
 const moto_animation = [
   "m",
@@ -57,9 +58,12 @@ function App() {
         <img src={asian_typo} alt="asian_typo" className="asian_typo"></img>
         <img src={wheel} alt="wheel" className="wheel" />
       </div>
-      {/* <div className="bottom_container">
+      <div className="body_container">
+        <div className="moto_container">
+          <img src={info} alt="info" className="info" />
+        </div>
         <img src={brake} alt="brake" className="brake" />
-      </div> */}
+      </div>
     </div>
   );
 }

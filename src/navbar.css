@@ -7,7 +7,7 @@ nav{
     background-color: black;
     white-space: nowrap;
     position: relative;
-    width: calc(100% - 549px);
+    width: calc(100% - 400px);
 }
 
 ul{

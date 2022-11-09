@@ -8,6 +8,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  width: 400px
 }
 
 .body_container{
@@ -15,44 +16,39 @@
   display: flex;
   align-items:flex-start;
   vertical-align: bottom;
-  border: 10px green solid;
+  border: 1px green solid;
 }
 
 .asian_typo{
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
 .moto{
-  width: 80%;
+  width: 75%;
   z-index: 2;
 }
 
 .wheel{
-  width: 15%;
+  width: 10%;
   height: auto;
   padding-left: 3em;
   background-color: black;
-  border: 5px blue solid
+  border: 1px blue solid
 }
 
-.wheel_container{
-  display: flex;
-  flex-direction: column;
-}
-
-.bottom_container{
-  
-  width: 40%;
-  border: 5px pink solid;
+.info{
+  width: 75%;
+  height: auto;
 }
 
 .brake{
-  display: block;
-  width: auto;
+  justify-self: end;
+  width: 15%;
+  border: 1px blue solid
 }
 
 .moto_container{
@@ -61,7 +57,7 @@
   width: 55%;
   height: auto;
   background-color: black;
-  border: 5px red solid;
+  border: 1px red solid;
 }
 
 h1{
@@ -97,13 +93,16 @@ h1{
 
 @media screen and (max-width: 900px){
 
-  .moto_container{
+  .moto_container, .bottom_container, .asian_typo{
     width: 100%;
   }
 
-  .wheel{
+  .wheel, .brake{
     align-self: flex-start;
-    padding-top: 2em;
+  }
+
+  .wheel{
+    padding-top: 4em;
   }
 
   .gold{
