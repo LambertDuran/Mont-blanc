@@ -14,12 +14,33 @@ ul{
     list-style-type: none;
 }
 
-li{
+.ulStyle{
+    position: absolute;
+    top: 0;
+}
+
+.faBars{
     display: inline-block;
+    color: white;
     padding-inline: 1em;
+    padding: 2em;
     vertical-align: middle;
     cursor: pointer;
+}
+
+.faXMark{
+    height: 12vh;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    color: white;
+    background-color: black;
     padding: 2em;
+    cursor: pointer;
+}
+
+.ul:last-child{
+    border: 10px solid red;
 }
 
 li:link{
@@ -47,7 +68,6 @@ li:first-child{
 }
 
 li:last-child{
-    color: white;
     display: none;
 }
 
@@ -58,13 +78,19 @@ li:last-child{
 }
 
 @media screen and (max-width: 1450px){
-    li:not(:first-child){
+    .faBars:not(:first-child){
         display: none;
     }
-    li:last-child{
+    .faBars:last-child{
         display: inline;
         position: absolute;
         right: 0px;
+    }
+    .faXMark:last-child{
+        display: inline;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     li:hover:last-child{
         border-bottom: none;

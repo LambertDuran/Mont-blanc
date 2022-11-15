@@ -58,6 +58,8 @@ const NumericInfo = ({ info, value, subvalue, category }) => {
   );
 };
 
+// let style= {position: 'absolute', backgroundColor: 'red', top:0}
+
 function App() {
   return (
     <div className="App">
@@ -104,6 +106,21 @@ function App() {
         />
       </div>
     </div>
+    // <div>
+    //   <div>
+    //     <div>test1</div>
+    //     <div>test2</div>
+    //     <div>test3</div>
+    //   </div>
+    //   <div style={style}>
+    //     <div style={{position: 'relative'}}>
+    //       Test ultime 1
+    //     </div>
+    //     <div style={{position: 'relative'}}>
+    //       Test ultime 2
+    //     </div>
+    //   </div>
+    // </div>
   );
 }
 
