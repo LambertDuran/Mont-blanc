@@ -1,3 +1,3 @@
 # Page réalisée en react / css
 
-![overview](./img/overview.gif)
+![overview](./src/img/overview.gif)
